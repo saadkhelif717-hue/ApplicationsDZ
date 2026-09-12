@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مَورِد DZ — فرص وعروض مفيدة</title>
+<meta name="description" content="موقع جزائري للفرص والعروض والمعلومات المفيدة.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="logo">مَورِد <span>DZ</span></div>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="#home">الرئيسية</a>
+      <a href="#jobs">فرص العمل</a>
+      <a href="#offers">العروض</a>
+      <a href="#articles">مقالات</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container">
+    <p class="badge">🇩🇿 منصة جزائرية</p>
+    <h1>اكتشف فرصًا وعروضًا مفيدة من هاتفك</h1>
+    <p>نجمع لك المعلومات والفرص والعروض في مكان واحد، بتصميم سريع وسهل الاستخدام.</p>
+    <a class="btn" href="#jobs">استكشف الفرص</a>
+  </div>
+</section>
+
+<section class="container section" id="jobs">
+  <div class="section-title">
+    <h2>💼 فرص العمل</h2><span>تجريبية</span>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="icon">💻</div><h3>عمل عن بعد</h3>
+      <p>فرص للعمل عبر الإنترنت من الهاتف أو الحاسوب.</p>
+      <button onclick="showInfo('سيتم وضع رابط الفرصة هنا بعد إضافة المصدر الحقيقي.')">عرض التفاصيل</button>
+    </article>
+    <article class="card">
+      <div class="icon">🎓</div><h3>تدريب وتعلّم</h3>
+      <p>مصادر مجانية لتطوير مهاراتك وزيادة فرصك.</p>
+      <button onclick="showInfo('أضف هنا دورة أو تدريبًا حقيقيًا مع رابط موثوق.')">عرض التفاصيل</button>
+    </article>
+    <article class="card">
+      <div class="icon">🏢</div><h3>وظائف محلية</h3>
+      <p>قسم مخصص لإعلانات العمل في الجزائر.</p>
+      <button onclick="showInfo('أضف إعلانًا حقيقيًا مع الجهة الناشرة وتاريخ النشر.')">عرض التفاصيل</button>
+    </article>
+  </div>
+</section>
+
+<section class="container section" id="offers">
+  <div class="section-title"><h2>🎁 عروض وروابط مفيدة</h2><span>تجريبية</span></div>
+  <div class="grid">
+    <article class="card"><div class="icon">📱</div><h3>تطبيقات مفيدة</h3><p>أدوات وخدمات تساعدك في حياتك اليومية.</p></article>
+    <article class="card"><div class="icon">🛒</div><h3>عروض شراء</h3><p>يمكن لاحقًا إضافة روابط تسويق بالعمولة بشكل واضح.</p></article>
+    <article class="card"><div class="icon">💡</div><h3>نصائح للربح</h3><p>محتوى تعليمي عن طرق الربح القانونية والآمنة.</p></article>
+  </div>
+</section>
+
+<section class="container section" id="articles">
+  <div class="section-title"><h2>📝 أحدث المقالات</h2></div>
+  <div class="article">
+    <h3>كيف تبدأ مشروعًا على الإنترنت من الهاتف؟</h3>
+    <p>ابدأ بمهارة أو خدمة حقيقية، وابنِ جمهورًا، ثم استخدم الإعلانات أو العمولة أو بيع الخدمات كمصدر دخل.</p>
+  </div>
+  <div class="article">
+    <h3>كيف تميّز فرصة الربح الحقيقية؟</h3>
+    <p>تجنب المواقع التي تطلب منك دفع المال مقابل وعد بأرباح مضمونة. تحقق دائمًا من الجهة وشروطها.</p>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container">
+    <h2>📩 اشترك في التحديثات</h2>
+    <p>أدخل بريدك في النسخة المستقبلية للحصول على أحدث الفرص.</p>
+    <form onsubmit="subscribe(event)">
+      <input type="email" placeholder="بريدك الإلكتروني" required>
+      <button class="btn">اشتراك</button>
+    </form>
+    <small>هذه النسخة تجريبية ولا ترسل البريد إلى خادم حاليًا.</small>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>مَورِد DZ</strong>
+    <p>© 2026 — منصة تجريبية. لا توجد أرباح مضمونة.</p>
+  </div>
+</footer>
+
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
